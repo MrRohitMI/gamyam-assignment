@@ -1,16 +1,44 @@
-# React + Vite
+This is a basic product management application built with React, Vite, and Bootstrap (via CDN).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The app allows users to:
 
-Currently, two official plugins are available:
+View products in table view or card view
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Switch between views using one toggle button
 
-## React Compiler
+Add new products
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Edit existing products
 
-## Expanding the ESLint configuration
+Search products with a 500ms debounce
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Load product data from a local data.json file
+
+Navigate through products using pagination
+
+Features
+1. View Toggle
+
+A single button toggles between table view and card view.
+
+2. Add and Edit Products
+
+A reusable form component opens when:
+
+The Add Product button is clicked
+
+The Edit button on a product is clicked
+
+3. Data From JSON
+
+Products are loaded from the file:
+
+public/products.json
+
+4. Search
+
+Search filters products in real time with a delay to improve performance.
+
+5. Pagination
+
+Shows 5 products per page with previous and next buttons.
